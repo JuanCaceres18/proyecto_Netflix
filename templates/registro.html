@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="icon" type="image/ico" href="./resources/netflix.ico">
+    <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+    <nav>
+        <a href="../index.html"><img src="../resources/logo_netflix.png" alt="logo de Netflix"></a>
+    </nav>
+    <section class="registro">
+        <div class="form-wrapper">
+            <h2>Registro</h2>
+            <form action="#" method="GET" id="formRegister" novalidate>
+                <div class="form-control">
+                    <input type="text" required placeholder="Nombre" name="nombre" id="nombre">
+                </div>
+                <div id="error-name"></div>
+                <div class="form-control">
+                    <input type="email" required placeholder="Email" name="email" id="email">
+                </div>
+                <div id="error-email"></div>
+                <div class="form-control">
+                    <input type="password" required placeholder="Contraseña" name="contraseña" id="contraseña">
+                </div>
+                <div id="error-password"></div>
+                <div class="form-control">
+                    <select name="contenido" id="contenido">
+                        <option value="">Preferencias</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Misterio">Misterio</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Comedia">Comedia</option>
+                    </select>
+                </div>
+                <div id="error-preferencias"></div>
+                <div class="form-control">
+                    <label id="birth_date">Fecha de nacimiento</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                </div>
+                <div id="error-fecha"></div>
+                <button type="submit" id="btn-send">Registrarme</button>
+                <div class="form-ayuda">
+                    <div class="terminos">
+                        <input type="checkbox" id="terminos">
+                        <label for="terminos">Acepto los términos y condiciones</label>
+                    </div>
+                    <div id="error-terminos"></div>
+                    <a href="#">¿Necesitas ayuda?</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="../js/validacion-form.js" defer></script>
+</body>
+</html>

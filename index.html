@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" type="image/ico" href="./resources/netflix.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="menu">
+        <nav class="navegacion-contenedor">
+            <ul class="navegacion menu-izquierdo">
+                <li><a href="#inicio"><img src="./resources/logo_netflix.png" alt="logo de Netflix"></a></li>
+                <li><a href="#peliculas">Peliculas</a></li>
+                <li><a href="#series">Series</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+            </ul>
+            <ul class="navegacion menu-derecho">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="./templates/registro.html" class="btn_registro">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="inicio" id="inicio">
+        <video autoplay loop muted class="background-clip">
+            <source src="./resources/Breaking Bad - Trailer Estena.mp4">
+        </video>
+        <div class="contenido-inicio">
+            <img src="./resources/logo_bb.png" alt="logo de Breaking Bad">
+            <div class="botones">
+                <a href="https://www.youtube.com/watch?v=mXd1zTwcQ18&pp=ygUUVHJhaWxlciBCcmVha2luZyBCYWQ%3D" class="boton1" target=_blank>Mirar ahora</a>
+                <a href="#" class="boton2">Más info <i class="fa-solid fa-circle-info"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="peliculas" id="peliculas">
+        <h2>Peliculas más aclamadas</h2>
+        <div class="peliculas_aclamadas">
+            <div class="movie">
+                <img class="movie-poster" src="./resources/poster_spiderman3.jpg" alt="poster de Spiderman 3 dirigida por Sam Raimi">
+                <div class="movie-info">
+                    <p class="movie-title">Spider-Man 3</p>
+                    <p class="movie-year">2007</p>
+                    <p class="movie-score">9.5<i class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+            <div class="movie">
+                <img class="movie-poster" src="./resources/12_angry_men_poster.jpeg" alt="poster de 12 Angry Men">
+                <div class="movie-info">
+                    <p class="movie-title">12 Angry Men</p>
+                    <p class="movie-year">1957</p>
+                    <p class="movie-score">10<i class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+            <div class="movie">
+                <img class="movie-poster" src="./resources/end_of_evangelion.jpg" alt="poster de The End of Evangelion">
+                <div class="movie-info">
+                    <p class="movie-title">The End of Evangelion</p>
+                    <p class="movie-year">1997</p>
+                    <p class="movie-score">10<i class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+            <div class="movie">
+                <img class="movie-poster" src="./resources/white_chicks_poster.jpeg" alt="poster de White Chicks">
+                <div class="movie-info">
+                    <p class="movie-title">White Chicks</p>
+                    <p class="movie-year">2004</p>
+                    <p class="movie-score">10<i class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+            <div class="movie">
+                <img class="movie-poster" src="./resources/el_padrino_poster.jpeg" alt="poster de El Padrino">
+                <div class="movie-info">
+                    <p class="movie-title">El Padrino</p>
+                    <p class="movie-year">1972</p>
+                    <p class="movie-score">10<i class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+            <div class="movie">
+                <img class="movie-poster" src="./resources/the_silence_of_the_lambs_poster.jpeg" alt="poster de El Silencio de los Inocentes">
+                <div class="movie-info">
+                    <p class="movie-title">El silencio de los inocentes</p>
+                    <p class="movie-year">1991</p>
+                    <p class="movie-score">8.5<i class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+            <div class="movie">
+                <img class="movie-poster" src="./resources/truman_show_poster.jpg" alt="poster de The Truman Show">
+                <div class="movie-info">
+                    <p class="movie-title">The Truman Show</p>
+                    <p class="movie-year">1998</p>
+                    <p class="movie-score">10<i class="fa-solid fa-star"></i></p>  
+                </div>
+            </div>
+            <div class="movie">
+                <img class="movie-poster" src="./resources/el_camino_poster.jpeg" alt="poster de El camino (pelicula del universo de Breaking Bad)">
+                <div class="movie-info">
+                    <p class="movie-title">El Camino</p>
+                    <p class="movie-year">2019</p>
+                    <p class="movie-score">9<i class="fa-solid fa-star"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="series" id="series">
+        <h2>Las mejores series</h2>
+        <div class="carousel-series">
+            <div class="slide1">
+                <img class="carrousel-item" src="./resources/the_office_poster.jpg" alt="poster de The office">
+                <img class="carrousel-item" src="./resources/poster_bb.jpg" alt="poster de Breaking Bad">
+                <img class="carrousel-item" src="./resources/serie_hannibal_poster.jpg" alt="poster de serie Hannibal">
+                <img class="carrousel-item" src="./resources/peaky_blinders_poster.jpg" alt="poster de los Peaky Blinders">
+                <img class="carrousel-item" src="./resources/twd_poster.jpg" alt="poster de The Walking Dead">
+                <img class="carrousel-item" src="./resources/stranger_things_poster.jpeg" alt="poster de Stranger Things"> 
+            </div>
+            <div class="slide2">
+                <img class="carrousel-item" src="./resources/monster_poster.jpeg" alt="poster de anime Monster">
+                <img class="carrousel-item" src="./resources/poster_evangelion.jpg" alt="poster de Evangelion">
+                <img class="carrousel-item" src="./resources/friends_poster.jpg" alt="poster de Friends">
+                <img class="carrousel-item" src="./resources/daredevil_poster.jpeg" alt="poster de Daredevil">
+                <img class="carrousel-item" src="./resources/el_encargado_poster.jpeg" alt="poster de El Encargado">
+                <img class="carrousel-item" src="./resources/poster_the_witcher.jpeg" alt="poster de The Witcher">
+            </div>
+            <div class="slide3">
+                <img class="carrousel-item" src="./resources/poster_narcos.jpg" alt="poster de Narcos">
+                <img class="carrousel-item" src="./resources/flash_poster.jpg" alt="poster de Flash">
+                <img class="carrousel-item" src="./resources/one_piece_poster.jpg" alt="poster de One Piece">
+                <img class="carrousel-item" src="./resources/loki_poster.jpg" alt="poster de Loki">
+                <img class="carrousel-item" src="./resources/wanda_vision_poster.jpeg" alt="poster de WandaVision">
+                <img class="carrousel-item" src="./resources/megamind_poster.jpg" alt="poster de Megamind">
+            </div>
+        </div>
+
+        <a href="#" class="switchLeft sliderButton"><</a>
+        <a href="#" class="switchRight sliderButton">></a>
+    </section>
+    <section class="reseñas" id="reseñas">
+        <div class="titulo-reseñas">
+            <h2>Reseñas de usuarios</h2>
+        </div>
+        <div class="reseñas-container">
+            <div class="testimonio">
+                <div class="testimonio-top">
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <img src="./resources/jk_rowling.jpeg" alt="foto de perfil de cliente J.K. Rowling">
+                        </div>
+                        <div class="name-user">
+                            <strong>J.K. Rowling</strong>
+                            <span>@jkrowling</span>
+                        </div>
+                    </div>
+                    <div class="review-score">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i> <!-- Estrella vacía-->
+                    </div>
+                </div>
+                <div class="comentario">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, perspiciatis, non facere distinctio minus deleniti nisi officia impedit corrupti labore deserunt maiores libero recusandae tenetur! Quia quaerat quasi iste repellendus.</p>
+                </div>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-top">
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <img src="./resources/hitchcock_foto.jpg" alt="foto de perfil de cliente Alfred Hitchcock">
+                        </div>
+                        <div class="name-user">
+                            <strong>Alfred Hitchcock</strong>
+                            <span>@al_hitchcock</span>
+                        </div>
+                    </div>
+                    <div class="review-score">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i> <!-- Estrella vacía-->
+                    </div>
+                </div>
+                <div class="comentario">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, perspiciatis, non facere distinctio minus deleniti nisi officia impedit corrupti labore deserunt maiores libero recusandae tenetur! Quia quaerat quasi iste repellendus.</p>
+                </div>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-top">
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <img src="./resources/sam_raimi.jpg" alt="foto de perfil de cliente Sam Raimi">
+                        </div>
+                        <div class="name-user">
+                            <strong>Sam Raimi</strong>
+                            <span>@sam_raimi</span>
+                        </div>
+                    </div>
+                    <div class="review-score">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i> <!-- Estrella vacía-->
+                    </div>
+                </div>
+                <div class="comentario">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, perspiciatis, non facere distinctio minus deleniti nisi officia impedit corrupti labore deserunt maiores libero recusandae tenetur! Quia quaerat quasi iste repellendus.</p>
+                </div>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-top">
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <img src="./resources/spielberg.jpeg" alt="foto de perfil de cliente Steven Spielberg">
+                        </div>
+                        <div class="name-user">
+                            <strong>Steven Spielberg</strong>
+                            <span>@steven_spielberg</span>
+                        </div>
+                    </div>
+                    <div class="review-score">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> <!-- Estrella vacía-->
+                    </div>
+                </div>
+                <div class="comentario">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, perspiciatis, non facere distinctio minus deleniti nisi officia impedit corrupti labore deserunt maiores libero recusandae tenetur! Quia quaerat quasi iste repellendus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="iconos">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="etiquetas-footer">
+            <p class="etiquetas">Audio descriptivo</p>
+            <p class="etiquetas">Centro de ayuda</p>
+            <p class="etiquetas">Tarjetas de regalo</p>
+            <p class="etiquetas">Prensa</p>
+            <p class="etiquetas">Relaciones con inversionistas</p>
+            <p class="etiquetas">Empleo</p>
+            <p class="etiquetas">Términos de uso</p>
+            <p class="etiquetas">Privacidad</p>
+            <p class="etiquetas">Avisos legales</p>
+            <p class="etiquetas">Preferencias de cookies</p>
+            <p class="etiquetas">Información corporativa</p>
+            <p class="etiquetas">Contáctanos</p> 
+        </div>
+        <p class="creditos">@JuanDeveloper18</p>           
+    </footer>
+    <script src="./js/carousel.js" defer></script>
+</body>
+</html>

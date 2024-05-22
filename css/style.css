@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+.menu{
+    display: flex;
+    background-color: black;
+    padding: 10px 20px;
+}
+.navegacion-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navegacion {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navegacion li{
+    padding: 0 15px;
+}
+.menu-izquierdo li a, .menu-derecho li a{
+    color: white;
+    text-decoration: none;
+    transition: all 450ms;
+}
+.menu-izquierdo li a:hover{
+    color: #f84f4f;
+}
+.menu-izquierdo img{
+    width: 150px;
+}
+.btn_registro{
+    text-decoration: none;
+    border: 2px solid #831010;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn_registro:hover{
+    background-color:#831010;
+    color
+}
+
+/* Inicio */
+.inicio{
+    width: 100%;
+    height: 88.5vh;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-inicio img{
+    width: 350px;
+}
+.botones{
+    display: flex;
+    padding: 30px;
+}
+.boton1{
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin-right: 15px;
+}
+.boton1:hover{
+    background-color: #fff;
+    color: black;
+}
+.boton2{
+    font-size: 23px;
+    color: #e9e0d1;
+    text-decoration: none;
+    border: 2px solid #e9e0d1;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.boton2:hover{
+    background-color: #e9e0d1;
+    color: black;
+}
+.background-clip{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Peliculas */
+.peliculas h2{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    background-color: #391212;
+}
+.peliculas{
+    width: 100%;
+    height: 120vh;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.peliculas_aclamadas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    row-gap: 30px;
+}
+.movie{
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: all 450ms;
+    box-shadow: 5px 5px 20px black;
+}
+.movie-poster{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    transition: all 300ms;
+}
+.movie-poster:hover{
+    transform: scale(1.15);
+}
+.movie-title{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.movie-score {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.movie-year{
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: #f1f508;
+}
+.movie-info {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 300ms;
+    padding: 5px;
+}
+.movie:hover .movie-info { /* Efecto hover para mostrar la info de la película */
+    opacity: 1;
+}
+
+/* Section Series */
+.series{
+    background: #000;
+    position: relative;
+}
+.series h2{
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: #391212;
+}
+.carousel-series .slide1, .carousel-series .slide2, .carousel-series .slide3{
+    padding-top: 5px;
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: transform 1s ease-in-out;
+}
+
+.series .sliderButton{
+    position: absolute;
+    top: 50%; /* Centra el botón verticalmente */
+    width: 40px;
+    height: 40px;
+    line-height: 40px; /* Centra el texto verticalmente */
+    transform: translateY(50%); /* Centra verticalmente el botón */
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(131, 16, 16, 0.8);;
+    text-decoration: none;
+    z-index: 3;
+    text-align: center; 
+    font-weight: 800;
+    border-radius: 50%;
+
+}
+.series .switchLeft{
+    left: 50px; /*  Distancia del botón al borde izquierdo */
+}
+.series .switchRight{
+    right: 50px; /*  Distancia del botón al borde derecho */
+}
+.carousel-series img{
+    min-width: 147px;
+    max-width: 147px;
+    height: 200px;
+    background-size: cover;
+    background-color: lightgreen;
+    margin: 2px 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 2;
+}
+.slide2, .slide3{
+    visibility: hidden;
+}
+.carousel-series img:hover{
+    transform: scale(1.4);
+    z-index: 2;
+}
+
+/* Section Reseñas/Críticas */
+.reseñas{
+    background-color: #000;
+    height: 90vh;
+    width: 100%;
+}
+.reseñas h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    background-color: #391212;
+    padding: 10px 20px;
+}
+.reseñas-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonio{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #391212;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.perfil-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.perfil-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 15px;
+}
+.review-score{
+    color: #f9d71c;
+}
+.testimonio-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comentario{
+    font-size: 17px;
+    color: white;
+}
+.testimonio:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+/* Footer */
+.footer{
+    background-color: #393939;
+    width: 100%;
+    height: 40vh;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.etiquetas-footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding-top: 30px;
+}
+.etiquetas{
+    color: white;
+    font-size: 15px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.iconos{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.creditos{
+    padding-top: 30px;
+    text-align: center;
+    color: red;
+    font-weight: 700;
+    cursor: pointer;
+}
+
