@@ -36,10 +36,15 @@ function showSlide(slideNumber) {
     
 }
 
-// Inicialmente mostrar el primer slider y ocultar los demás
+// Inicialmente mostramos el primer slider y ocultamos los demás
 document.querySelector('.slide1').style.visibility = 'visible';
 document.querySelector('.slide1').style.display = 'flex';
 document.querySelector('.slide2').style.visibility = 'hidden';
 document.querySelector('.slide2').style.display = 'none';
 document.querySelector('.slide3').style.visibility = 'hidden';
 document.querySelector('.slide3').style.display = 'none';
+
+// Barra de búsqueda - Menú derecho
+const searchButton = document.querySelector('.btn_search');
+const menuDerecho = document.querySelector('.menu-derecho');
+

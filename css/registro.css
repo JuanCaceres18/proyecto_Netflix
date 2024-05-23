@@ -118,3 +118,9 @@ form .form-control{
     font-size: 11px;
     margin-bottom: 5px;
 }
+/* Media queries */
+@media screen and (max-width: 1023px) {
+    nav a img{
+        width: 120px;
+    }
+}

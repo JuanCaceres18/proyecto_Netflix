@@ -368,3 +368,113 @@
     cursor: pointer;
 }
 
+/* Media Queries */
+/* Pantallas grandes */
+@media screen and (max-width:1920px){
+/* Se aplican la reglas de estilo definidas fuera del media query */
+}
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu img{
+        width: 120px;
+    }
+    .peliculas{
+        height: 140vh;
+    }
+    .movie{
+        width: 180px;
+        height: 250px;
+    }
+    .peliculas_aclamadas {
+        grid-template-columns: repeat(3,2fr);
+    }
+    .carousel-series{
+        overflow: hidden;
+    }
+    .reseñas{
+        height: 59vh;
+    }
+    .testimonio{
+        width: 300px;
+        height: 120px;
+    }
+    .testimonio p{
+        display: none;
+    }
+    .testimonio-top{
+        display: flex;
+        flex-direction: column;
+    }
+    .review-score{
+        display: flex;
+        align-items: center;
+        padding-top: 12px;
+    }
+    .iconos{
+        font-size: 20px;
+    }
+    .etiquetas-footer{
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+        padding-top: 5px;
+    }
+}
+/* Móviles (< 768px) */
+@media only screen and (max-width: 767px) {
+    .menu img{
+        width: 100px;
+    }
+    .peliculas{
+        height: 99vh;
+    }
+    .peliculas_aclamadas{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .movie{
+        width: 140px;
+        height: 160px;
+    }
+    .movie-poster{
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-series{
+        overflow: hidden;
+    }
+    .reseñas{
+        height: 65vh;
+    }
+    .testimonio{
+        width: 200px;
+        height: 120px;
+    }
+    .testimonio p{
+        display: none;
+    }
+    .testimonio-top{
+        display: flex;
+        flex-direction: column;
+    }
+    .name-user strong{
+        font-size: 15px;
+    }
+    .name-user span{
+        font-size: 12px;
+    }
+    .review-score{
+        display: flex;
+        align-items: center;
+        padding-top: 12px;
+    }
+    .iconos{
+        font-size: 20px;
+    }
+    .etiquetas-footer{
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+        padding-top: 5px;
+    }
+    .etiquetas{
+        font-size: 13px;
+    }
+}
