@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
+    <!-- Uso de favicon -->
     <link rel="icon" type="image/ico" href="./resources/netflix.ico">
+    <!-- Uso de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Menú de navegación -->
     <header class="menu">
         <nav class="navegacion-contenedor">
+            <!-- Parte izquierda del menú -->
             <ul class="navegacion menu-izquierdo">
                 <li><a href="#inicio"><img src="./resources/logo_netflix.png" alt="logo de Netflix"></a></li>
                 <li><a href="#peliculas">Peliculas</a></li>
                 <li><a href="#series">Series</a></li>
                 <li><a href="#reseñas">Reseñas</a></li>
             </ul>
+            <!-- Parte derecha del menú -->
             <ul class="navegacion menu-derecho">
-                <li><a href="#" class="btn_search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="https://www.netflix.com/" target="_blank" class="btn_search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="./templates/registro.html" class="btn_registro">Registrarse</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Section Inicio -->
     <section class="inicio" id="inicio">
         <video autoplay loop muted class="background-clip">
             <source src="./resources/breaking_bad_trailer.mp4">
@@ -31,10 +38,12 @@
             <img src="./resources/logo_bb.png" alt="logo de Breaking Bad">
             <div class="botones">
                 <a href="https://www.youtube.com/watch?v=mXd1zTwcQ18&pp=ygUUVHJhaWxlciBCcmVha2luZyBCYWQ%3D" class="boton1" target=_blank>Mirar ahora</a>
-                <a href="#" class="boton2">Más info <i class="fa-solid fa-circle-info"></i></a>
+                <a href="https://www.imdb.com/title/tt0903747/" target="_blank" class="boton2">Más info <i class="fa-solid fa-circle-info"></i></a>
             </div>
         </div>
     </section>
+
+    <!-- Section Peliculas -->
     <section class="peliculas" id="peliculas">
         <h2>Peliculas más aclamadas</h2>
         <div class="peliculas_aclamadas">
@@ -104,6 +113,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Section Series -->
     <section class="series" id="series">
         <h2>Las mejores series</h2>
         <div class="carousel-series">
@@ -133,9 +144,12 @@
             </div>
         </div>
 
+        <!-- Botones del carrousel -->
         <a href="#" class="switchLeft sliderButton">&lt;</a>
         <a href="#" class="switchRight sliderButton">&gt;</a>
     </section>
+
+    <!-- Section Reseñas -->
     <section class="reseñas" id="reseñas">
         <div class="titulo-reseñas">
             <h2>Reseñas de usuarios</h2>
@@ -152,6 +166,7 @@
                             <span>@jkrowling</span>
                         </div>
                     </div>
+                    <!-- Estrellas (puntuación de consumidores) -->
                     <div class="review-score">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -235,6 +250,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="iconos">
             <a href="https://www.facebook.com/NetflixArg/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -259,6 +276,8 @@
         </div>
         <p class="creditos">@JuanDeveloper18</p>           
     </footer>
+
+    <!-- Uso de JavaScript -->
     <script src="./js/carousel.js" defer></script>
 </body>
 </html>

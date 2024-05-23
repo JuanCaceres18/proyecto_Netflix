@@ -1,4 +1,7 @@
+/* Importar fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Restablecer márgenes, rellenos y bordes */
 *{
     padding: 0;
     margin: 0;
@@ -6,10 +9,12 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Aplica un desplazamiento suave a toda la página cuando navegamos */
 }
-/* Header */
+
+/* Estilos del Header */
 .menu{
     display: flex;
     background-color: black;
@@ -21,7 +26,6 @@ html{
     align-items: center;
     width: 100%;
 }
-
 .navegacion {
     display: flex;
     list-style: none;
@@ -52,10 +56,10 @@ html{
     background-color:#831010;
 }
 
-/* Inicio */
+/* Estilos de la sección Inicio */
 .inicio{
     width: 100%;
-    height: 88.5vh;
+    height: 88.5vh; /* Ocupa el 88.5% de la altura de la ventana */
     background-color: rgba(0,0,0,0.4);
     display: flex;
     justify-content: center;
@@ -104,14 +108,14 @@ html{
 .background-clip{
     width: 100%;
     height: 100vh;
-    object-fit: cover;
-    position: absolute;
-    right: 0;
+    object-fit: cover; /* Asegura que va a cubrir completamente el área del contenedor */
+    position: absolute; /* */
+    right: 0;   /* Coloco al elemento en la esquina inferior derecha de su padre */
     bottom: 0;
-    z-index: -1;
+    z-index: -1; /* Coloco el video por debajo de otros elementos */
 }
 
-/* Peliculas */
+/* Estilos de la sección Peliculas */
 .peliculas h2{
     font-size: 25px;
     padding: 10px 20px;
@@ -152,7 +156,7 @@ html{
     transition: all 300ms;
 }
 .movie-poster:hover{
-    transform: scale(1.15);
+    transform: scale(1.15); /* Agranda la imagen de la movie al pasar el ratón */
 }
 .movie-title{
     text-align: center;
@@ -170,11 +174,19 @@ html{
     padding-bottom: 10px;
     color: #f1f508;
 }
-.movie-info {
+/*  */
+.movie-info { 
     background: rgba(0, 0, 0, 0.7);
+
+     /* (position: absolute, top:0 y left:0) -> 
+        Ubico al elemento en la esquina superior izquierda 
+        del contenedor .movie 
+     */
     position: absolute;
     top: 0;
     left: 0;
+    /* El ancho y alto del elemento ocupan el 100% del ancho y
+    alto del contenedor padre */
     width: 100%;
     height: 100%;
     display: flex;
@@ -182,6 +194,8 @@ html{
     align-items: center;
     justify-content: center;
     color: white;
+    /* El elemento comienza siendo invisible, para luego 
+    mostrarlo cuando pasemos el ratón por encima de su padre */
     opacity: 0;
     transition: opacity 300ms;
     padding: 5px;
@@ -190,7 +204,7 @@ html{
     opacity: 1;
 }
 
-/* Section Series */
+/* Estilos de la sección Series */
 .series{
     background: #000;
     position: relative;
@@ -216,11 +230,11 @@ html{
 
 .series .sliderButton{
     position: absolute;
-    top: 50%; /* Centra el botón verticalmente */
+    top: 50%; 
     width: 40px;
     height: 40px;
     line-height: 40px; /* Centra el texto verticalmente */
-    transform: translateY(50%); /* Centra verticalmente el botón */
+    transform: translateY(50%); /* Centra verticalmente el botón dentro del contenedor */
     color: white;
     font-size: 1.5rem;
     background-color: rgba(131, 16, 16, 0.8);;
@@ -256,7 +270,7 @@ html{
     z-index: 2;
 }
 
-/* Section Reseñas/Críticas */
+/* Estilos de la sección Reseñas/Críticas */
 .reseñas{
     background-color: #000;
     height: 90vh;
@@ -334,7 +348,7 @@ html{
     transition: all ease 0.3s;
 }
 
-/* Footer */
+/* Estilos del Footer */
 .footer{
     background-color: #393939;
     width: 100%;

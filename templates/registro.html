@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de registro</title>
+    <!-- Uso de favicon -->
     <link rel="icon" type="image/ico" href="./resources/netflix.ico">
     <link rel="stylesheet" href="../css/registro.css">
 </head>
 <body>
+
+    <!-- Logo de Netflix -->
     <nav>
         <a href="../index.html"><img src="../resources/logo_netflix.png" alt="logo de Netflix"></a>
     </nav>
@@ -15,18 +18,25 @@
         <div class="form-wrapper">
             <h2>Registro</h2>
             <form action="#" method="GET" id="formRegister" novalidate>
+                <!-- Campo Nombre -->
                 <div class="form-control">
                     <input type="text" required placeholder="Nombre" name="nombre" id="nombre">
                 </div>
                 <div id="error-name"></div>
+
+                <!-- Campo Email -->
                 <div class="form-control">
                     <input type="email" required placeholder="Email" name="email" id="email">
                 </div>
                 <div id="error-email"></div>
+
+                <!-- Campo Contraseña -->
                 <div class="form-control">
                     <input type="password" required placeholder="Contraseña" name="contraseña" id="contraseña">
                 </div>
                 <div id="error-password"></div>
+
+                <!-- Select - Preferencias de usuario -->
                 <div class="form-control">
                     <select name="contenido" id="contenido">
                         <option value="">Preferencias</option>
@@ -39,18 +49,26 @@
                     </select>
                 </div>
                 <div id="error-preferencias"></div>
+
+                <!-- Input - Fecha de nacimiento -->
                 <div class="form-control">
                     <label id="birth_date">Fecha de nacimiento</label>
                     <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
                 </div>
                 <div id="error-fecha"></div>
+
+                <!-- Botón de registro -->
                 <button type="submit" id="btn-send">Registrarme</button>
+                
+                <!-- Sección de información para el usuario -->
                 <div class="form-ayuda">
+                    <!-- Términos y condiciones -->
                     <div class="terminos">
                         <input type="checkbox" id="terminos">
                         <label for="terminos">Acepto los términos y condiciones</label>
                     </div>
                     <div id="error-terminos"></div>
+                    <!-- Guía para el usuario -->
                     <a href="#">¿Necesitas ayuda?</a>
                 </div>
             </form>
