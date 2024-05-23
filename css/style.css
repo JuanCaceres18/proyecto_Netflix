@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /* Header */
 .menu{
     display: flex;
@@ -48,7 +50,6 @@
 }
 .btn_registro:hover{
     background-color:#831010;
-    color
 }
 
 /* Inicio */
@@ -355,7 +356,7 @@
     padding: 0 20px;
     cursor: pointer;
 }
-.iconos{
+.iconos a{
     color: white;
     font-size: 24px;
     cursor: pointer;
